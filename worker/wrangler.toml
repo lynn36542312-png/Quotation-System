@@ -1,0 +1,12 @@
+name = "quotebot-worker"
+main = "src/index.ts"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "quotebot-db"
+database_id = "636c42d0-2ac4-499d-9fab-65e4a891568c"
+
+[vars]
+ENVIRONMENT = "production"

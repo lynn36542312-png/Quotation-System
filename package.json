@@ -1,0 +1,14 @@
+{
+  "name": "quotebot-cloudflare",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:worker": "cd worker && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "deploy:worker": "cd worker && npm run deploy",
+    "setup": "cd frontend && npm install && cd ../worker && npm install",
+    "db:init": "cd worker && wrangler d1 execute quotebot-db --file=schema.sql",
+    "db:init:local": "cd worker && wrangler d1 execute quotebot-db --local --file=schema.sql"
+  }
+}
